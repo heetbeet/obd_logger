@@ -26,7 +26,9 @@ Run ~/obd_logger/obd_logger in your terminal to ensure that everythin is working
 If the above worked, configure the Pi to run the script on startup by adding the following two line as a chron job
 
 First run `chrontab -e`
+
 Then add line `@restart mkdir -p /home/pi/logs/`
+
 Then add line `@restart bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &`
 
 
