@@ -3,6 +3,6 @@ DIR="$(dirname "$(readlink -f "$0")")"
 
 while true
 do
-	/home/pi/miniconda3/bin/python "$DIR/obd_logger.py"
-	sleep 2
+    /bin/python3 "$DIR/obd_logger.py"
+    sleep 2
 done
