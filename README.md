@@ -23,4 +23,8 @@ git clone https://github.com/heetbeet/obd_logger.git ~/obd_logger
 bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &
 ```
 
+# My own additions
+- VSCode via `. <( wget -O - https://code.headmelted.com/installers/apt.sh )`
+
+
 You should now be able to plug in OBD2 cable into your car and raspberry pi, and retrieve the logs afterwards in `~/logs`
