@@ -1,15 +1,7 @@
 [Desktop Entry]
 
-
-# ************************
-# Editable configurations
-# ************************
 Name=obd_logger
 Icon=gnome-monitor
 Terminal=true
-
-# ************************
-# Boilerplate configurations
-# ************************
 Type=Application
-Exec=bash -c '"/home/pi/Applications/obd_logger/obd_logger"'
+Exec=bash -c '"/home/pi/obd_logger/obd_logger"'
