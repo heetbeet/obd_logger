@@ -12,6 +12,7 @@ The main idea came from https://github.com/roflson/pyobd and https://github.com/
 ```sh
 # Install python3
 sudo apt-get install python3 python3-pip
+pip3 install obd
 
 # Clone this repo into home ~/obd_logger
 git clone https://github.com/heetbeet/obd_logger.git ~/obd_logger
