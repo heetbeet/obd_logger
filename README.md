@@ -6,14 +6,14 @@ The main idea came from https://github.com/roflson/pyobd and https://github.com/
 - A car with an OBD2 port 😉
 - OBD2 USB cable
 - A raspberry Pi with Python 3.x installed
-- https://github.com/brendan-w/python-OBD via `pip install obd`
+- https://github.com/brendan-w/python-OBD via `sudo pip3 install obd`
 
 # Getting started
 
 Install python3 and obd
 ```
 sudo apt-get install python3 python3-pip
-pip3 install obd
+sudo pip3 install obd
 ```
 
 Clone this repo into home ~/obd_logger
