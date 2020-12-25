@@ -6,23 +6,31 @@ The main idea came from https://github.com/roflson/pyobd and https://github.com/
 - A car with an OBD2 port 😉
 - OBD2 USB cable
 - A raspberry Pi with Python 3.x installed
-- https://github.com/brendan-w/python-OBD via `pip install obd`
+- https://github.com/brendan-w/python-OBD via `sudo pip3 install obd`
 
 # Getting started
-```sh
-# Install python3
-sudo apt-get install python3 python3-pip
-pip3 install obd
 
-# Clone this repo into home ~/obd_logger
-git clone https://github.com/heetbeet/obd_logger.git ~/obd_logger
-
-# Run ~/obd_logger/obd_logger in your terminal to ensure that everythin is working
-
-# If the above worked, configure the Pi to run the script on startup by adding the following line to /etc/rc.local
-mkdir -p /home/pi/logs/
-bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &
+Install python3 and obd
 ```
+sudo apt-get install python3 python3-pip
+sudo pip3 install obd
+```
+
+Clone this repo into home ~/obd_logger
+```
+git clone https://github.com/heetbeet/obd_logger.git ~/obd_logger
+```
+
+Run ~/obd_logger/obd_logger in your terminal to ensure that everythin is working
+
+If the above worked, configure the Pi to run the script on startup by adding the following two line as a chron job
+
+First run `chrontab -e`
+
+Then add line `@reboot mkdir -p /home/pi/logs/`
+
+Then add line `@reboot bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &`
+
 
 # My own additions
 - VSCode via https://code.visualstudio.com/# ARM 32
