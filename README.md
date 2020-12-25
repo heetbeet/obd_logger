@@ -24,7 +24,7 @@ bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &
 ```
 
 # My own additions
-- VSCode via `. <( wget -O - https://code.headmelted.com/installers/apt.sh )`
+- VSCode via https://code.visualstudio.com/# ARM 32
 - Always boot into HDMI mode: https://raspberrypi.stackexchange.com/a/56140
 
 
