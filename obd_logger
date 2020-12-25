@@ -1,6 +1,5 @@
 #!/bin/bash 
 DIR="$(dirname "$(readlink -f "$0")")"
-#mkdir -p ~/logs >/dev/null 2>&1
 
 while true
 do

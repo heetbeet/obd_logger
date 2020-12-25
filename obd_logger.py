@@ -6,6 +6,8 @@ import time
 import logging
 import os
 
+os.makedirs("/home/pi/logs", exist_ok=True)
+
 print("**********************************")
 print("Starting ", str(datetime.datetime.now()))
 print("**********************************", flush=True)
@@ -33,7 +35,6 @@ try:
 
     # read car's vitals line by line and write to csv
     localtime = time.localtime(time.time())
-    os.mkdirs("/home/pi/logs", exist_ok=True)
     filename = "/home/pi/logs/carlogger-"+str(localtime[0])+"-"+str(localtime[1])+"-"+str(localtime[2])+"-"+str(localtime[3])+"-"+str(localtime[4])+"-"+str(localtime[5])+".csv"
 
     with open(filename, "a") as fw:
