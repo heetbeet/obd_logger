@@ -10,9 +10,13 @@ The main idea came from https://github.com/roflson/pyobd and https://github.com/
 
 # Getting started
 ```sh
-# Clone this repo into home (~)
-cd ~
-git clone https://github.com/heetbeet/obd_logger.git
+# Install python3
+sudo apt-get install python3 python3-pip
+
+# Clone this repo into home ~/obd_logger
+git clone https://github.com/heetbeet/obd_logger.git ~/obd_logger
+
+# Run ~/obd_logger/obd_logger in your terminal to ensure that everythin is working
 
 # If the above worked, configure the Pi to run the script on startup by adding the following line to /etc/rc.local
 bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &
