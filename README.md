@@ -26,6 +26,7 @@ bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &
 # My own additions
 - VSCode via https://code.visualstudio.com/# ARM 32
 - Always boot into HDMI mode: https://raspberrypi.stackexchange.com/a/56140
+- Add VNC: `start menu -> Preferences -> Raspberry Pi Configurations -> Interfaces -> VNC: (·) Enable`
 
 
 You should now be able to plug in OBD2 cable into your car and raspberry pi, and retrieve the logs afterwards in `~/logs`
