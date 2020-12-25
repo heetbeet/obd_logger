@@ -6,7 +6,7 @@ import time
 import logging
 
 print("**********************************")
-print("Starting ", str(time.localtime(time.time())))
+print("Starting ", str(datetime.datetime.now())
 print("**********************************", flush=True)
 
 # redirect odb logger warnings and logger errors to actual python errors
