@@ -9,20 +9,26 @@ The main idea came from https://github.com/roflson/pyobd and https://github.com/
 - https://github.com/brendan-w/python-OBD via `pip install obd`
 
 # Getting started
-```sh
-# Install python3
+
+Install python3 and obd
+```
 sudo apt-get install python3 python3-pip
 pip3 install obd
-
-# Clone this repo into home ~/obd_logger
-git clone https://github.com/heetbeet/obd_logger.git ~/obd_logger
-
-# Run ~/obd_logger/obd_logger in your terminal to ensure that everythin is working
-
-# If the above worked, configure the Pi to run the script on startup by adding the following line to /etc/rc.local
-mkdir -p /home/pi/logs/
-bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &
 ```
+
+Clone this repo into home ~/obd_logger
+```
+git clone https://github.com/heetbeet/obd_logger.git ~/obd_logger
+```
+
+Run ~/obd_logger/obd_logger in your terminal to ensure that everythin is working
+
+If the above worked, configure the Pi to run the script on startup by adding the following two line as a chron job
+
+First run `chrontab -e`
+Then add line `@restart mkdir -p /home/pi/logs/`
+Then add line `@restart bash /home/pi/obd_logger/obd_logger >> /home/pi/logs/obd.log 2>&1 &`
+
 
 # My own additions
 - VSCode via https://code.visualstudio.com/# ARM 32
